@@ -17,6 +17,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 
+
+//import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+
 @Controller
 public class api_controller {
    // log로 문제사항 및 실행사항을 체크하는 라이브러리
@@ -37,11 +40,11 @@ public class api_controller {
    public String ajax8(
          @RequestParam(value = "fdata", defaultValue = "", required = false) String fdata,
          HttpServletResponse res
-         ) {
+         ) throws Exception{
       try {
+    	 System.out.println(fdata);
          String rdata[] = fdata.split(",");
-         this.logger.info(rdata[0]);
-         
+         this.logger.info(rdata[0]);         
          this.pw = res.getWriter();
          this.pw.write("ok");
       }
