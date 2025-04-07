@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS -중급</title>
+</head>
+<body>
+<span onclick="">LG-냉장고</span>
+<span onclick="">LG-에어컨</span>
+
+<input type="button" value="스토리지 추가 " onclick="abc()">
+
+</body>
+<script>
+/* 
+storage 사용법"
+localStorage :해당 도메인 기준으로 메모리에 저장 시키는 방식(지속적으로 기억시킴)
+sessionstorage :localstorage 동일한 형태이지만, 브라우저를 닫을 경우 또는 신규탭으로 출력시 데이터 손실
+ExtensionStorage :API 데이터를 storage에 저장시켜서 웹페이지를 출력하는 방식(5md)
+*
+*/
+
+function storage() {
+	//localStorage.removeItem("userpd"); //해당 스토리지key에 대한 값 삭제
+	localStorage.removeItem("userpd"+pidx,pdname);
+	sessionStorage.setItem("userpd"+pidx,pdname);
+	 location.href='./js_middle2.html';
+}
+
+function product() {
+	sessionStorage.setItEM("userpd",pdname);
+    location.href='./js_middle2.html';
+} 
+
+
+function abc() {
+    localStorage.setItem("mid", "hong");
+    sessionStorage.setItem("midx",50);
+} 
+
+</script>
+</html>
