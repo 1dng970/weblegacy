@@ -9,10 +9,12 @@
 <body>
 
 <!--  import : js파일을 로드하여 해당 함수만 선택하여 로드 할 수 있습니다.-->
+<!-- import js를 로드하여 트겆ㅇ 함수를 로드 할 수 이쓴 기능  -->
 </body>
 <script type="module">
-import {zzz} from "./ecma2.js";
+import {zzz,aaa,bbb} from "./ecma2.js";
 zzz();
+bbb();
 </script>
 
 </html>

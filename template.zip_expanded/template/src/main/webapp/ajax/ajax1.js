@@ -24,3 +24,4 @@ function ajax_gopage(){
 	ajax.open("GET","./ajax1.do?product="+data,false);//false : 동기화 , true : 비동기화 
 	ajax.send();
 }
+
