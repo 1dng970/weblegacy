@@ -21,6 +21,11 @@
 	<property name="password" value="a123456"/>
 	</bean>
 	
-
-
+	<!-- mapper -->
+    <bean id="sqlfactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <property name="dataSource" ref="dbinfo"/>
+    <property name="configLocation" value="calsspath:/META-INF/config.xml"/>
+    <property name="mapperLocations" value="calsspath:/META-INF/mapper.xml"/>
+       
+    </bean>
 </beans>
