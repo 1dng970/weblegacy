@@ -2,5 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="api.api_mapper">
 
+<insert id="pdtest">
+insert into pds (MIDX,PD1,PD2,PD3,PD4,PD5) values(mno.nextval,#{PD1},#{PD2},#{PD3},#{PD4},#{PD5}) 
+</insert>
+
 
 </mapper>
