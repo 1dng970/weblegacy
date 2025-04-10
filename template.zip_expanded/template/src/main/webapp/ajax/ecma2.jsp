@@ -4,17 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ECMA -ES7</title>
+<title>ECMA - ES7 ~ 기초코드</title>
 </head>
 <body>
 
-<!--  import : js파일을 로드하여 해당 함수만 선택하여 로드 할 수 있습니다.-->
-<!-- import js를 로드하여 트겆ㅇ 함수를 로드 할 수 이쓴 기능  -->
 </body>
 <script type="module">
-import {zzz,aaa,bbb} from "./ecma2.js";
+//import : js 파일을 로드 하여 해당 함수만 선택하여 로드 할 수 있습니다.
+import {zzz,bbb} from "./ecma2.js";		//import js를 로드하여 특정 함수를 로드 할 수 있는 기능
 zzz();
 bbb();
 </script>
-
 </html>

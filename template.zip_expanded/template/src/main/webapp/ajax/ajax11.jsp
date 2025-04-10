@@ -4,16 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ECMA Script-PATCH(Ajax)</title>
+<title>ECMA Script - PATCH(Ajax)</title>
 </head>
 <body>
-아이디 : <input type="text" id="mid">
+아이디 : <input type="text" id="mid"><br>
 <input type="button" value="ES 클릭" id="btn">
-
-
 </body>
 <script type="module">
 import {myinfos} from "./ajax11.js";
-
 </script>
 </html>

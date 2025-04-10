@@ -9,5 +9,5 @@
 <body>
 <input type="button" value="전송" id="btn">
 </body>
-<script src="./ecma.js?v=1"></script>
+<script src="./ecma1.js"></script>
 </html>

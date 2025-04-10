@@ -3,8 +3,13 @@
 <mapper namespace="api.api_mapper">
 
 <insert id="pdtest">
-insert into pds (MIDX,PD1,PD2,PD3,PD4,PD5) values(mno.nextval,#{PD1},#{PD2},#{PD3},#{PD4},#{PD5}) 
+insert into pds (MIDX,pd1,pd2,pd3,pd4,pd5) values (mno.nextval,#{pd1},#{pd2},#{pd3},#{pd4},#{pd5})
 </insert>
+
+<select id="pdlist" resultType="api_dto">
+select * from pds order by midx desc
+</select>
+
 
 
 </mapper>
